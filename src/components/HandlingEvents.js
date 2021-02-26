@@ -1,5 +1,13 @@
 import React from 'react'
 
 export default function HandlingEvents(){
-    return <h2>Handling Events</h2>
+    function handleClick(event){
+        event.preventDefault()
+        try{
+            alert(`Thanks for clicking. This is an event handler.`)
+        } catch(error){
+            console.log(error)
+        }
+    }
+    return <h2><a href="#" onClick={handleClick}>{`Handling Events - Click Here`}</a></h2>
 }
