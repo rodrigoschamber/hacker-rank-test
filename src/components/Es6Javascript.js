@@ -56,7 +56,7 @@ export default function Es6Javascript(){
         </h3>
         <h3>
             {`[Character ${queenBorg._id}]: ${queenBorg._fromFederation === false ? "Warning!": null} ${queenBorg._rank} ${queenBorg._name} is a ${queenBorg._specie} from ${queenBorg._planet} planet.`}
-            {`${queenBorg.stateIntention()}`}
+            {queenBorg.stateIntention()}
         </h3>
     </div>)
 }
