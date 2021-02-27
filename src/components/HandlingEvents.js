@@ -9,5 +9,5 @@ export default function HandlingEvents(){
             console.log(error)
         }
     }
-    return <h2><a href="#" onClick={handleClick}>{`Handling Events - Click Here`}</a></h2>
+    return <h2><a href="null" onClick={handleClick}>{`Handling Events - Click Here`}</a></h2>
 }
